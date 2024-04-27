@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Homepage</title>
+</head>
+
+<body>
+    <script>
+        function changeBackgroundColor() {
+            // Get the body element
+            var body = document.body;
+
+            // Generate a random color
+            var randomColor = getRandomColor();
+
+            // Set the background color
+            body.style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            // Generate a random hexadecimal color code
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Call the function when the page loads
+        window.onload = changeBackgroundColor;
+    </script>
+</body>
+
+</html>
