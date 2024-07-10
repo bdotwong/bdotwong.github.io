@@ -4,38 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Your Homepage</title>
 </head>
-
 <body>
-    <script>
-        function changeBackgroundColor() {
-            // Get the body element
-            var body = document.body;
+    <header>
+        <h1>Bryan Wong Portfolio</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+            <div class="links">
+                <a href="https://www.linkedin.com/in/bryanlwong/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/bdotwong" target="_blank">GitHub</a>
+                <a href="https://www.printables.com/@wong_bryan_920503" target="_blank">Printables</a>
+            </div>
+        </aside>
+        <div class="main-content">
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>BSME degreed mechanical engineer with experience debugging and repairing complex electromechanical systems/robots. 
+                    I've worked on 3-D camera systems at Google Streetview and advanced driver assistance systems (ADAS) at Waymo. 
+                    Previous experience as a robotics hardware engineer at Simbe robotics. 
+                    Currently employed as a test engineer at X, the moonshot factory for project Mineral.</p>
+            </section>
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                
+                <div class="experience-item">
+                    <img src="mineral-logo.jpg" alt="Mineral.ai Logo" width="50">
+                    <h3>Mineral.ai</h3>
+                    <p><strong>Systems Integration Engineer (via akkodis)</strong><br>
+                    Jul 2023 - Present · 1 yr 1 mo<br>
+                    Mountain View, California, United States · On-site<br>
+                    <a href="https://x.company/projects/mineral/" target="_blank">Mineral Team</a></p>
+                </div>
+            
+                <div class="experience-item">
+                    <img src="mineral-logo.jpg" alt="Mineral.ai Logo" width="50">
+                    <h3>Mineral.ai</h3>
+                    <p><strong>Hardware Test Engineer (via Modis)</strong><br>
+                    Jan 2022 - Aug 2023 · 1 yr 8 mos<br>
+                    <a href="https://x.company/projects/mineral/" target="_blank">Mineral Team</a></p>
+                </div>
+            
+                <div class="experience-item">
+                    <img src="autoroboto-logo.jpg" alt="AutoRoboto Logo" width="50">
+                    <h3>AutoRoboto</h3>
+                    <p><strong>Test Engineer III</strong><br>
+                    Jan 2021 - Dec 2021 · 1 yr</p>
+                </div>
+            
+                <div class="experience-item">
+                    <img src="simbe-logo.jpg" alt="Simbe Robotics Logo" width="50">
+                    <h3>Simbe Robotics, Inc</h3>
+                    <p><strong>Robotics Hardware Engineer</strong><br>
+                    Oct 2018 - Jan 2021 · 2 yrs 4 mos<br>
+                    San Francisco, California<br>
+                    <a href="https://www.simberobotics.com/" target="_blank">Simbe Robotics</a></p>
+                </div>
+            
+                <div class="experience-item">
+                    <img src="a9-logo.jpg" alt="A9.com Logo" width="50">
+                    <h3>A9.com (Amazon)</h3>
+                    <p><strong>Quality Assurance Specialist and Dataset Lead</strong><br>
+                    Jan 2017 - Oct 2018 · 1 yr 10 mos<br>
+                    Palo Alto, CA</p>
+                </div>
+                
+                <div class="experience-item">
+                    <img src="waymo-logo.jpg" alt="Waymo Logo" width="50">
+                    <h3>Google (Waymo)</h3>
+                    <p><strong>Manufacturing Assembly Test Specialist</strong><br>
+                    Contractor for Google</p>
+                </div>
+            </section>
+            <!-- Add later -->
 
-            // Generate a random color
-            var randomColor = getRandomColor();
-
-            // Set the background color
-            body.style.backgroundColor = randomColor;
-        }
-
-        function getRandomColor() {
-            // Generate a random hexadecimal color code
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        // Call the function when the page loads
-        window.onload = changeBackgroundColor;
-    </script>
+            <section id="projects" class="section">
+                <h2></h2>
+                <p></p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bryan Wong. All rights reserved.</p>
 </body>
-
 </html>
