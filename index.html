@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Bryan Wong Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Background</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
         <aside class="sidebar">
@@ -29,9 +35,18 @@
                     Previous experience as a robotics hardware engineer at Simbe robotics. 
                     Currently employed as a test engineer at X, the moonshot factory for project Mineral.</p>
             </section>
-            <section id="experience" class="section">
-                <h2>Experience</h2>
-                
+
+            <h2>Experience</h2>
+
+            <section id="experience" class="section">                <div class="experience-item">
+                <img src="relentless_adrenaline_logo.jpg" alt="relentless_adrenaline Logo" width="50">
+                <h3>Relentless Adrenaline | Google Deepmind </h3>
+                <p><strong>Mechatronics Engineer | Google Deepmind</strong><br>
+                Sept 2024 - Present <br>
+                Mountain View, California, United States · On-site<br>
+                <a href="https://deepmind.google/" target="_blank">Google Deepmind</a></p>
+            </div>
+
                 <div class="experience-item">
                     <img src="mineral-logo.jpg" alt="Mineral.ai Logo" width="50">
                     <h3>Mineral.ai</h3>
@@ -74,21 +89,37 @@
                 </div>
                 
                 <div class="experience-item">
-                    <img src="waymo-logo.jpg" alt="Waymo Logo" width="50">
+                    <img src="waymo-logo.png" alt="Waymo Logo" width="50">
                     <h3>Google (Waymo)</h3>
                     <p><strong>Manufacturing Assembly Test Specialist</strong><br>
                     Contractor for Google</p>
                 </div>
             </section>
-            <!-- Add later -->
-
-            <section id="projects" class="section">
-                <h2></h2>
-                <p></p>
+                <section id="certifications" class="section">
+                    <h2>Certifications</h2>
+                    <div class="certificate-item">
+                        <img src="cs50x.png" alt="CS50X Certificate Thumbnail">
+                        <div class="certificate-info">
+                            <h3>CS50's Introduction to Computer Science (CS50X)</h3>
+                            <p>Completed Harvard's introductory computer science course, covering algorithms, data structures, and web programming.</p>
+                            <a href="cs50x.png">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="cs50p.png" alt="CS50P Certificate Thumbnail">
+                        <div class="certificate-info">
+                            <h3>CS50's Introduction to Programming with Python (CS50P)</h3>
+                            <p>Completed Harvard's Python programming course, focusing on problem-solving, libraries, and application development.</p>
+                            <a href="cs50p.png">View Certificate</a>
+                        </div>
+                    </div>
+                </section>
+                
             </section>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Bryan Wong. All rights reserved.</p>
+    </footer>
 </body>
 </html>
