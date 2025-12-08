@@ -187,7 +187,7 @@ footer {
 .project-image {
     width: 100%;
     /* You can adjust this height value (e.g., 150px) to control the vertical space */
-    height: 180px; 
+    height: 500px; 
     /* THIS IS THE KEY CHANGE: Ensures the whole image is visible */
     object-fit: contain; 
     border-radius: 4px;
@@ -208,7 +208,7 @@ footer {
 .project-thumb {
     width: 50%;
     /* Adjust this height value (e.g., 120px) to control the vertical space */
-    height: 120px; 
+    height: 250px; 
     /* Ensures the whole image is visible */
     object-fit: contain; 
     border-radius: 4px;
