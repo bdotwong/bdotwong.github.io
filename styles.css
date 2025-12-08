@@ -224,3 +224,10 @@ footer {
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 4px;
 }
+/* Styling for multiple links/buttons in a project card */
+.project-links-wrapper {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px; /* Space between the two buttons */
+    flex-wrap: wrap; 
+}
